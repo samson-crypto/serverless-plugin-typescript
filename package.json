@@ -1,6 +1,6 @@
 {
   "name": "@chain-explorer/serverless-plugin-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/src/index.js",
   "files": [
@@ -9,10 +9,10 @@
     "README.md"
   ],
   "scripts": {
-    "prepublish": "npm run build",
-    "precommit": "npm run test",
+    "prepublish": "yarn build",
+    "precommit": "yarn test",
     "build": "rimraf dist && tsc",
-    "pretest": "npm run lint",
+    "pretest": "yarn lint",
     "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
