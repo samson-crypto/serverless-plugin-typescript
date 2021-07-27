@@ -1,7 +1,7 @@
 import * as path from 'path'
 import * as fs from 'fs-extra'
 import * as _ from 'lodash'
-import { globby } from 'globby'
+import * as globby from 'globby'
 
 import * as typescript from './typescript'
 import { watchFiles } from './watchFiles'
@@ -163,7 +163,7 @@ export class TypeScriptPlugin {
 
     // include any "extras" from the "include" section
     if (service.package.include && service.package.include.length > 0) {
-      const files = await globby(service.package.include)
+      const files = await globby.default(service.package.include)
 
       for (const filename of files) {
         const destFileName = path.resolve(path.join(BUILD_FOLDER, filename))

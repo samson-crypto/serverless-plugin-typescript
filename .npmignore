@@ -1,0 +1,16 @@
+test/
+src/
+node_modules/
+.editorconfig
+.gitignore
+.npmrc
+.npmignore
+Makefile
+.vscode/
+scripts/
+sqls/
+profiles
+*.ts
+!*.d.ts
+tsconfig.*
+*.log
