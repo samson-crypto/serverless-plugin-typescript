@@ -1,7 +1,7 @@
 import * as path from 'path'
 import * as fs from 'fs-extra'
 import * as _ from 'lodash'
-import * as globby from 'globby'
+import { globby } from 'globby'
 
 import * as typescript from './typescript'
 import { watchFiles } from './watchFiles'
